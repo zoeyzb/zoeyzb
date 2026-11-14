@@ -1,0 +1,39 @@
+{
+  "username": "zoeyzb",
+  "name": "Sierra Byrd",
+  "monogram": "SB",
+  "edition": "01",
+  "role": "Full-Stack Software Engineer \u00b7 Product Builder",
+  "location": "REMOTE",
+  "statement": "I build useful products from interface to infrastructure.",
+  "website": "sierra-portfolio-beige.vercel.app",
+  "availability": "Open to remote engineering roles",
+  "services": [
+    "Full-Stack Product Engineering",
+    "AI & Voice Systems",
+    "Lead & CRM Automation",
+    "Interactive UI & 3D"
+  ],
+  "featured_repos": [
+    "YOURAGENT",
+    "afterglow-qloo-agent",
+    "chatgpt-sms-mcp"
+  ],
+  "projects": [
+    {
+      "name": "YOURAGENT",
+      "label": "VOICE SAAS",
+      "description": "Multi-tenant voice SaaS with safe deploys."
+    },
+    {
+      "name": "TasteAtlas AI",
+      "label": "3D DISCOVERY",
+      "description": "3D discovery with Qloo recommendations."
+    },
+    {
+      "name": "ChatGPT SMS MCP",
+      "label": "MCP MESSAGING",
+      "description": "Local MCP messaging with send safeguards."
+    }
+  ]
+}

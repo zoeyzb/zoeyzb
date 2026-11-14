@@ -1,0 +1,50 @@
+name: Update profile artwork and activity
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-readme-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate Paper Signal artwork
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: ${{ github.repository_owner }}
+        run: python scripts/generate.py
+
+      - name: Generate Readme Atelier activity and stack cards
+        uses: monokernn/readme-atelier@9248beb14c734269c02f36a590617db7c3df15ad
+        with:
+          config: atelier.yml
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit: 'false'
+
+      - name: Commit all generated profile assets once
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets atelier
+          if git diff --cached --quiet; then
+            echo "Profile assets are already current."
+          else
+            git commit -m "chore(profile): refresh artwork and activity"
+            git push
+          fi

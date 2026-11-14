@@ -1,0 +1,33 @@
+username: zoeyzb
+theme: minimal
+name: Sierra Byrd
+tagline: Full-stack products, AI systems & workflow automation
+about:
+  - Building end-to-end web products, APIs, and data-backed workflows
+  - Working across AI agents, voice systems, CRM, and integrations
+  - Focused on clear UX, reliable behavior, and tested delivery
+stack:
+  - typescript
+  - javascript
+  - python
+  - react
+  - nextdotjs
+  - postgresql
+  - supabase
+  - nodedotjs
+  - fastapi
+  - livekit
+  - threedotjs
+  - gsap
+socials:
+  github: zoeyzb
+  website: sierra-portfolio-beige.vercel.app
+  linkedin: sierra-byrd-804926403
+repos:
+  - YOURAGENT
+  - afterglow-qloo-agent
+  - chatgpt-sms-mcp
+  - saas
+sections:
+  - activity
+  - stack
