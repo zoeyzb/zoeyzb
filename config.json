@@ -10,30 +10,33 @@
   "availability": "Open to remote engineering roles",
   "services": [
     "Full-Stack Product Engineering",
-    "AI & Voice Systems",
-    "Lead & CRM Automation",
-    "Interactive UI & 3D"
+    "Business & Revenue Systems",
+    "Commerce & Product UX",
+    "Data & Automation"
   ],
   "featured_repos": [
-    "YOURAGENT",
-    "afterglow-qloo-agent",
-    "chatgpt-sms-mcp"
+    "selected-work",
+    "saas",
+    "wok-kai-food-",
+    "law-2",
+    "Masion-Aureolle-saloon",
+    "criminal-law"
   ],
   "projects": [
     {
-      "name": "YOURAGENT",
-      "label": "VOICE SAAS",
-      "description": "Multi-tenant voice SaaS with safe deploys."
+      "name": "Recover Revenue",
+      "label": "REVENUE OPERATIONS",
+      "description": "Acquisition, lead intelligence, operations."
     },
     {
-      "name": "TasteAtlas AI",
-      "label": "3D DISCOVERY",
-      "description": "3D discovery with Qloo recommendations."
+      "name": "NextRole",
+      "label": "CAREER SAAS",
+      "description": "Multi-user job-search and application SaaS."
     },
     {
-      "name": "ChatGPT SMS MCP",
-      "label": "MCP MESSAGING",
-      "description": "Local MCP messaging with send safeguards."
+      "name": "Reverb Audio",
+      "label": "3D COMMERCE",
+      "description": "3D headphone storefront and product UX."
     }
   ]
 }

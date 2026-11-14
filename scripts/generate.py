@@ -68,7 +68,7 @@ def cover_svg(cfg: dict) -> str:
 <path d="M548 71h309v225H548z" fill="{INK}"/><path d="M571 94h263v179H571z" fill="{CORAL}"/>
 <g class="mark"><circle cx="703" cy="184" r="72" fill="{LIME}"/><path d="M648 188c31-72 78-76 111-12M647 201c30 32 75 39 112 4" fill="none" stroke="{INK}" stroke-width="8" stroke-linecap="round"/><text x="703" y="201" text-anchor="middle" class="serif" font-size="58" font-weight="700">{escape(cfg['monogram'])}</text></g>
 <text x="703" y="290" text-anchor="middle" class="sans caps" font-size="9" fill="{PAPER}"><tspan fill="{PAPER}">PRODUCT / SYSTEMS / EXPERIENCE</tspan></text>
-<rect x="744" y="56" width="96" height="25" rx="13" fill="{BLUE}"/><text x="792" y="73" text-anchor="middle" class="sans caps" font-size="8" fill="{PAPER}"><tspan fill="{PAPER}">BUILDING</tspan></text>
+<rect x="744" y="56" width="96" height="25" rx="13" fill="{BLUE}"/><text x="792" y="73" text-anchor="middle" class="sans caps" font-size="8" fill="{PAPER}"><tspan fill="{PAPER}">WORK</tspan></text>
 </svg>'''
 
 
@@ -81,10 +81,10 @@ def folio_svg(cfg: dict) -> str:
         color = palette[i]
         project_nodes.append(f'''<g class="intro" style="animation-delay:{.1+i*.1:.2f}s"><text x="40" y="{y}" class="serif" font-size="25" font-weight="700">0{i+1}</text><rect x="88" y="{y-22}" width="5" height="34" fill="{color}"/><text x="110" y="{y-4}" class="sans" font-size="14" font-weight="700">{escape(short(project.get('name'), 25))}</text><text x="110" y="{y+18}" class="mono" font-size="9">{escape(short(project.get('description'), 42))}</text><text x="476" y="{y+18}" text-anchor="end" class="mono" font-size="8">{escape(short(project.get('label'), 23))}</text></g>''')
     practices = [
-        ("PRODUCT SYSTEMS", "Web apps, APIs, authentication and data"),
-        ("AI & VOICE", "Agents, speech, tools and orchestration"),
-        ("WORKFLOW & DATA", "Lead systems, CRM and automation"),
-        ("QUALITY & UX", "Testing, accessibility and reliability"),
+        ("PRODUCT ENGINEERING", "Full-stack apps, APIs, auth and data"),
+        ("BUSINESS SYSTEMS", "CRM, lead intelligence and automation"),
+        ("COMMERCE & UX", "Storefronts, 3D and product experiences"),
+        ("QUALITY & DELIVERY", "Testing, accessibility and deployment"),
     ]
     practice_nodes = []
     for i, (heading, detail) in enumerate(practices):
@@ -93,8 +93,8 @@ def folio_svg(cfg: dict) -> str:
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460" role="img" aria-label="Selected engineering work and technical focus">
 <defs><style>{styles()}</style><pattern id="dots" width="13" height="13" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="{INK}" opacity=".16"/></pattern></defs>
 <rect width="900" height="460" rx="5" fill="{PAPER}"/><rect x="515" width="385" height="460" fill="{INK}"/><rect x="515" width="385" height="460" fill="url(#dots)" opacity=".6"/>
-<text x="39" y="47" class="sans caps">01 / SELECTED ENGINEERING</text><text x="476" y="47" text-anchor="end" class="mono" font-size="10">PUBLIC REPOSITORIES</text><line x1="39" y1="62" x2="476" y2="62" stroke="{INK}"/>
-<text x="39" y="105" class="serif" font-size="34" font-weight="700">Systems worth exploring.</text>{''.join(project_nodes)}
+<text x="39" y="47" class="sans caps">01 / SELECTED ENGINEERING</text><text x="476" y="47" text-anchor="end" class="mono" font-size="10">PRIVATE PRODUCT BUILDS</text><line x1="39" y1="62" x2="476" y2="62" stroke="{INK}"/>
+<text x="39" y="105" class="serif" font-size="34" font-weight="700">Flagship products.</text>{''.join(project_nodes)}
 <text x="548" y="47" class="sans caps" fill="{LIME}"><tspan fill="{LIME}">02 / ENGINEERING PRACTICE</tspan></text><line x1="548" y1="62" x2="829" y2="62" stroke="{LIME}"/>{''.join(practice_nodes)}
 <rect x="548" y="385" width="281" height="42" fill="{LIME}"/><text x="564" y="403" class="sans caps">PRIVATE PRODUCT BUILDS</text><text x="564" y="419" class="sans" font-size="11" font-weight="700">Recover Revenue  ·  NextRole</text>
 <text x="39" y="433" class="mono" font-size="9">Private systems are documented separately; source code and credentials stay private.</text>

@@ -1,72 +1,117 @@
 <div align="center">
 
-<img src="./assets/cover.svg" width="100%" alt="Sierra Byrd — Full-Stack Software Engineer and Product Builder" />
-
-<p><strong>Full-stack software engineer building useful products, AI systems, and the workflows behind them.</strong></p>
+<img src="./assets/cover.svg" width="100%" alt="Sierra Byrd — Software Engineer and Full-Stack Product Builder" />
 
 <p>
   <a href="https://sierra-portfolio-beige.vercel.app/">PORTFOLIO</a> ·
+  <a href="https://github.com/zoeyzb/selected-work">SELECTED WORK & PRIVATE PROJECT CASE STUDIES</a> ·
   <a href="https://www.linkedin.com/in/sierra-byrd-804926403/">LINKEDIN</a> ·
-  <a href="mailto:sierra@recoverrevenue.company">EMAIL</a> ·
-  <a href="https://github.com/zoeyzb">GITHUB</a>
+  <a href="mailto:sierra@recoverrevenue.company">CONTACT</a>
 </p>
-<p><sub>Open to remote software engineering opportunities.</sub></p>
 
-<img src="./assets/folio.svg" width="100%" alt="Selected engineering projects and technical focus" />
+<img src="./assets/folio.svg" width="100%" alt="Recover Revenue, NextRole, Reverb Audio and engineering focus" />
 
 </div>
 
-## What I build
+## Flagship product systems
 
-- **Product engineering:** Full-stack applications, APIs, authentication, databases and deployment.
-- **AI and voice systems:** Agent workflows, voice interfaces, speech pipelines and tool integrations.
-- **Workflow and data:** Lead acquisition, qualification, CRM workflows, enrichment and automation.
-- **Interactive experiences:** Responsive interfaces, 3D experiences, motion and product-focused UX.
+These are the larger products where the most substantial engineering work lives. Their source repositories remain private; the public case studies include screenshots, system design, implementation scope and verification boundaries.
 
-I work across the product lifecycle: understanding the problem, shaping the interface, implementing the backend and data flow, integrating services, and checking that the important paths actually work.
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/zoeyzb/selected-work/blob/main/case-studies/recover-revenue.md"><img src="https://raw.githubusercontent.com/zoeyzb/selected-work/main/assets/recover-operator-os.jpg" width="100%" alt="Recover Operator OS private workspace" /></a>
 
-## Selected work
+### Recover Revenue · Recover Operator OS
 
-### Private product systems
+**Full-stack acquisition and revenue-operations platform**
 
-- **[Recover Revenue](https://recoverrevenue.company/)** · [Technical case study](./case-studies/recover-revenue.md) — Full-stack growth platform spanning public acquisition, SEO/search, buyer journeys, lead discovery and qualification, outreach, follow-up, owner operations and conversion tracking. The public website is live; the internal source remains private.
-- **[NextRole](https://next-role-web-nine.vercel.app/)** · [Technical case study](./case-studies/nextrole.md) — Job-search workspace for role discovery, posting imports, résumé and application preparation, review-first automation and application tracking. In active development; external provider capabilities depend on configuration.
+Public acquisition site connected to private lead intelligence, website audits, qualification, personalized outreach, follow-up, owner CRM, workflow approvals and operational monitoring.
 
-### Public engineering repositories
+**802 tests passed across 173 test files** in the inspected local workspace.
 
-- **[YOURAGENT](https://github.com/zoeyzb/YOURAGENT)** — Multi-tenant AI voice-agent SaaS with organization-scoped data, encrypted runtime credentials, agent versioning, guarded deployment and call-history evidence.
-- **[TasteAtlas AI](https://github.com/zoeyzb/afterglow-qloo-agent)** — Interactive 3D cultural discovery using Qloo API orchestration and explainable recommendations. The sample atlas is explicitly illustrative; live results still require validation with the event-issued key.
-- **[ChatGPT SMS MCP](https://github.com/zoeyzb/chatgpt-sms-mcp)** — Local MCP server for macOS Messages and Google Voice, with two-step send confirmation, idempotency, recipient allowlists and hourly send limits.
+[Case study](https://github.com/zoeyzb/selected-work/blob/main/case-studies/recover-revenue.md) · [Live website](https://recoverrevenue.company/)
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/zoeyzb/selected-work/blob/main/case-studies/nextrole.md"><img src="https://raw.githubusercontent.com/zoeyzb/selected-work/main/assets/nextrole.jpg" width="100%" alt="NextRole career workspace" /></a>
 
-### Product and interface work
+### NextRole
 
-- **[RevenueOS](https://github.com/zoeyzb/saas)** — Revenue-intelligence dashboard demo covering CRM, pipeline, marketing, retention, subscriptions, transactions and reporting. Uses illustrative sample data rather than a live production backend; its local smoke suite passed 96 checks during this audit.
-- **[Chroma Hair Atelier](https://github.com/zoeyzb/chroma-hair-)** — Responsive salon website with service navigation and an appointment-request builder; real booking integration is not connected.
-- **[HEYREN](https://github.com/zoeyzb/HEYREN)** — 3D, voice-first assistant experience with scripted conversation previews and selectable workflows. The showcase is illustrative; it does not place live calls or write to a real CRM/calendar.
+**Multi-user career and application workspace**
 
-### Private voice QA system
+Role discovery, job imports, structured résumé editing, approved-facts generation, ATS analysis, application materials, review-first automation and opportunity tracking.
 
-- **Patient Voice QA Harness** · [Technical case study](./case-studies/patient-voice-qa.md) — Synthetic-patient voice QA using LiveKit Agents, Deepgram and Groq, with scripted scenarios, separate audio tracks, timestamped transcripts and evidence-backed evaluation. Offline implementation is distinct from live-call validation, which is not claimed as complete.
+**119 frontend tests and 4 security checks passed.** Backend verification notes and its current provider-model test mismatch are documented in the case study.
+
+[Case study](https://github.com/zoeyzb/selected-work/blob/main/case-studies/nextrole.md) · [Product](https://nextrolehq.com/)
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/zoeyzb/selected-work/blob/main/case-studies/reverb-audio.md"><img src="https://raw.githubusercontent.com/zoeyzb/selected-work/main/assets/reverb-audio.jpg" width="100%" alt="Reverb Audio 3D headphone storefront" /></a>
+
+### Reverb Audio
+
+**3D commerce and product experience**
+
+Interactive headphone storefront with procedural product geometry, material selection, responsive product storytelling, a persistent shopping bag, quantity controls, subtotal calculations and sample-order export.
+
+[Case study](https://github.com/zoeyzb/selected-work/blob/main/case-studies/reverb-audio.md) · [Live experience](https://reverb-audio.vercel.app/)
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/zoeyzb/selected-work/blob/main/case-studies/lead-intelligence.md"><img src="https://raw.githubusercontent.com/zoeyzb/selected-work/main/assets/recover-revenue-site.jpg" width="100%" alt="Recover Revenue public acquisition website" /></a>
+
+### Lead Intelligence & Outreach
+
+**Research, qualification and business automation**
+
+A system organizing 1,000+ prospect records, website evidence, audit findings, qualification signals, personalized outreach and staged follow-up. This is part of the wider Recover Revenue operating system.
+
+[Case study](https://github.com/zoeyzb/selected-work/blob/main/case-studies/lead-intelligence.md)
+</td>
+</tr>
+</table>
+
+## Engineering evidence
+
+| Project | Verified or documented evidence |
+|---|---|
+| Recover Revenue | **802 passing tests** across 173 test files; fresh local run November 14, 2026 |
+| NextRole | **119 frontend + 4 dependency-security tests passed**; backend run: 332 passed, 1 failed on a Gemini model fallback assertion |
+| RevenueOS | **96 smoke checks passed**; interactive dashboard uses illustrative sample data |
+| Conversational Voice Agent & QA | **146 automated tests** documented for call flows, interruptions, silence fallback and failure cases |
+| Telescope Scheduling | **100+ automated tests** documented for scheduling constraints and edge cases |
+| Lead Intelligence & Outreach | **1,000+ prospect records** organized for research and qualification |
+
+These are project-specific engineering measures, not customer counts, revenue claims or production-usage metrics.
+
+## Additional engineering work
+
+- **Conversational Voice Agent & QA Pipeline** — Python, LiveKit, Deepgram and Groq; structured inquiry capture, escalation, follow-up and owner review. [Case study](https://github.com/zoeyzb/selected-work/blob/main/case-studies/voice-agent-qa.md)
+- **Telescope Scheduling System** — Python and Astroplan; observation windows, scheduling constraints and edge cases. [Case study](https://github.com/zoeyzb/selected-work/blob/main/case-studies/telescope-scheduling.md)
+- **Aluminum Price Forecasting** — Pandas, Prophet and Flask; historical data from 2008–2024 and a 90-day forecast workflow. [Case study](https://github.com/zoeyzb/selected-work/blob/main/case-studies/aluminum-forecasting.md)
+- **3D Zombie Survival Game** — Godot, GDScript and Blender; gameplay systems, physics, enemy behavior and 3D assets. [Case study](https://github.com/zoeyzb/selected-work/blob/main/case-studies/zombie-survival.md)
+- **ForYouHub Commerce & Growth Operations** — Shopify, UGC creative, TikTok advertising, SEO, analytics, customer support and order workflows. [Case study](https://github.com/zoeyzb/selected-work/blob/main/case-studies/foryouhub.md)
+- **Reusable SaaS Starter** — product foundation associated with a 500-person waitlist; the figure is not presented as paying customers or active users. [Case study](https://github.com/zoeyzb/selected-work/blob/main/case-studies/saas-starter.md)
+- **Crypto Research & Automated Trading** — five-year historical data, backtesting, signal generation, risk controls and Binance integration. No current profit claim. [Case study](https://github.com/zoeyzb/selected-work/blob/main/case-studies/crypto-research.md)
+
+## Selected public builds
+
+- **[RevenueOS](https://github.com/zoeyzb/saas)** — revenue-intelligence dashboard with CRM, pipeline, recurring revenue, transactions and reporting. 96 local smoke checks passed; records are illustrative sample data.
+- **[Wok Hei](https://github.com/zoeyzb/wok-kai-food-)** — restaurant website with interactive menu, gallery, sample stories, local ordering-bag preview and reservation enquiry form. Menu prices and stories are illustrative; no order/payment is collected.
+- **[Hale Marchetti Reyes](https://github.com/zoeyzb/law-2)** — criminal-defense website concept with responsive practice-area navigation and a validated inquiry endpoint. The firm, attorneys, case results and reviews are fictional.
+- **[Maison Aurelle](https://github.com/zoeyzb/Masion-Aureolle-saloon)** — salon website with service discovery, before/after comparisons, reduced-motion support and appointment-request email handling. Requests are not confirmed appointments.
+- **[Law Your Way](https://github.com/zoeyzb/criminal-law)** — React/Vite legal website concept with accessible preparation checklists and responsive UI.
+- **[ALBA Massage & Wellness](https://github.com/zoeyzb/alba-massage-spa)** — editorial spa website concept with treatment discovery and email-enquiry fallback.
 
 ## Technical toolkit
 
-- **Languages:** TypeScript, JavaScript, Python, SQL, HTML and CSS; additional experience with Java, C++, Rust and GDScript.
-- **Frontend:** React, Next.js, Vite, Tailwind CSS, Three.js, React Three Fiber, GSAP and Framer Motion.
-- **Backend and data:** Node.js, FastAPI, Flask, PostgreSQL, Supabase, Neon, REST APIs and authentication.
-- **AI and integrations:** OpenAI APIs, LiveKit, Deepgram, Groq, Qloo, MCP servers, voice workflows and browser automation.
-- **Quality and delivery:** Vitest, Pytest, Playwright, TypeScript checks, linting, CI workflows and Vercel deployments.
+- **Languages:** TypeScript, JavaScript, Python, SQL, HTML/CSS, Java, C++, Rust and GDScript.
+- **Frontend & interaction:** React, Next.js, Vite, Tailwind CSS, Three.js, React Three Fiber, GSAP and Framer Motion.
+- **Backend & data:** Node.js, FastAPI, Flask, PostgreSQL, Supabase, Neon, REST APIs, authentication and workflow services.
+- **AI & integrations:** OpenAI APIs, LiveKit, Deepgram, Groq, MCP, speech workflows and service integrations.
+- **Quality & delivery:** Vitest, Pytest, Playwright, TypeScript checks, linting, CI, responsive QA and Vercel deployment.
 
-## Contribution activity and stack
+## Private work and activity
 
-<!-- readme-atelier:start -->
-<!-- Generated by Readme Atelier (https://github.com/monokernn/readme-atelier). Edit atelier.yml instead of this block. -->
-
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./atelier/activity-dark.svg"/><img src="./atelier/activity.svg" width="100%" alt="Contribution activity"/></picture></p>
-
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./atelier/stack-dark.svg"/><img src="./atelier/stack.svg" width="100%" alt="Tech stack"/></picture></p>
-
-<!-- readme-atelier:end -->
-
----
-
-<p align="center"><sub>Paper Signal visual system adapted from <a href="https://github.com/Jenesyx/pretty-github">Pretty GitHub</a>. Dynamic activity and stack cards generated by <a href="https://github.com/monokernn/readme-atelier">Readme Atelier</a>. See <a href="./THIRD_PARTY_NOTICES.md">third-party notices</a>.</sub></p>
+Private source repositories, credentials, customer records and provider configuration remain private. This profile uses GitHub's native contribution graph rather than a second, decorative activity heatmap. Private-contribution visibility is already enabled, so GitHub can include anonymized private activity without exposing repository names or code.

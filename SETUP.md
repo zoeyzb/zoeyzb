@@ -1,27 +1,18 @@
 # Profile maintenance
 
-This repository combines two MIT-licensed profile tools:
+The profile uses a small Paper Signal-inspired SVG identity system and a curated public case-study repository.
 
-- **Paper Signal** supplies the editorial cover and selected-work folio. Edit `config.json`, then run `python scripts/generate.py` to refresh `assets/cover.svg` and `assets/folio.svg`.
-- **Readme Atelier** supplies the contribution activity and technology-stack cards. Edit `atelier.yml`; the pinned GitHub Action refreshes the generated block in `README.md`.
+- `config.json` contains the display name, statement, services and featured projects.
+- `scripts/generate.py` renders `assets/cover.svg` and `assets/folio.svg` from that configuration.
+- `README.md` contains the project summaries and links to `https://github.com/zoeyzb/selected-work`.
+- The `selected-work` repository contains sanitized case studies and screenshots for projects whose source code remains private.
 
-## Local preview
+## Refresh artwork
 
 ```bash
-python scripts/generate.py --demo
 GITHUB_TOKEN="$(gh auth token)" python scripts/generate.py
-GITHUB_TOKEN="$(gh auth token)" node /path/to/readme-atelier/dist/cli.js build --user zoeyzb --config atelier.yml --out . --preview
 ```
 
-The hosted workflow runs both generators in sequence and creates one commit, avoiding competing README writers. It uses GitHub's repository token and does not require a personal access token stored in repository secrets.
+The script checks that the selected public repositories exist, then regenerates the two SVG assets. GitHub's native contribution graph updates independently; no third-party activity heatmap is embedded.
 
-## What to edit
-
-- `config.json`: display name, role, statement, services and the three projects shown in the folio.
-- `atelier.yml`: theme, short bio, technology stack, social links and generated sections.
-- `README.md`: project summaries, case-study links and contact information. Leave the `readme-atelier` markers in place.
-- `case-studies/`: sanitized technical summaries of private projects. Never add `.env` files, customer data, private credentials, API keys or proprietary source code.
-
-## Publishing notes
-
-The profile README is public. The private case studies describe scope only; the original private repositories remain private. The project summaries explicitly distinguish illustrative demos and incomplete external validation from live, verified behavior.
+Never add `.env` files, credentials, customer records, private source code or proprietary configuration to the public profile or case-study repository.
